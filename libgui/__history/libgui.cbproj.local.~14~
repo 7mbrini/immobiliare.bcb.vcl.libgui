@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/23 10:42:37.000.166,=C:\Users\settembrini\Documents\RAD Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2021/11/23 10:43:23.000.024,C:\Users\settembrini\Documents\RAD Studio\Projects\File1.cpp=F:\dev\jobs\immobiliare.bcb.vcl.c\libgui\main.cpp</Transaction>
+    <Transaction>2021/11/23 10:43:30.000.372,C:\Users\settembrini\Documents\RAD Studio\Projects\Project1.cbproj=F:\dev\jobs\immobiliare.bcb.vcl.c\libgui\libgui.cbproj</Transaction>
+    <Transaction>2021/11/23 10:44:40.000.362,=F:\dev\jobs\immobiliare.bcb.vcl.c\libgui\Unit1.cpp</Transaction>
+    <Transaction>2021/11/23 10:44:55.000.188,F:\dev\jobs\immobiliare.bcb.vcl.c\libgui\Unit1.h=F:\dev\jobs\immobiliare.bcb.vcl.c\libgui\libgui.h</Transaction>
+    <Transaction>2021/11/23 10:44:55.000.188,F:\dev\jobs\immobiliare.bcb.vcl.c\libgui\Unit1.cpp=F:\dev\jobs\immobiliare.bcb.vcl.c\libgui\libgui.cpp</Transaction>
+    <Transaction>2021/11/23 11:00:01.000.843,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\TFormQuerySupplyAndDemand.cpp</Transaction>
+    <Transaction>2021/11/23 11:00:01.000.830,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\TFormQuerySalesHist.cpp</Transaction>
+    <Transaction>2021/11/23 11:00:01.000.236,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\TFormCustomers.cpp</Transaction>
+    <Transaction>2021/11/23 11:00:01.000.278,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\TFormFindCustomers.cpp</Transaction>
+    <Transaction>2021/11/23 11:00:01.000.312,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\TFormQueries.cpp</Transaction>
+    <Transaction>2021/11/23 11:00:01.000.263,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\TFormFindAssets.cpp</Transaction>
+    <Transaction>2021/11/23 11:00:01.000.246,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\TFormDebug.cpp</Transaction>
+    <Transaction>2021/11/23 11:00:01.000.220,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\TFormAssets.cpp</Transaction>
+    <Transaction>2021/11/23 11:00:01.000.299,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\TFormMain.cpp</Transaction>
+    <Transaction>2021/11/23 11:00:01.000.819,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\TFormQuerySales.cpp</Transaction>
+    <Transaction>2021/11/23 11:29:52.000.756,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\cities.cpp</Transaction>
+    <Transaction>2021/11/23 11:29:52.000.763,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\databanker.cpp</Transaction>
+    <Transaction>2021/11/23 11:29:52.000.766,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\immobiliare.cpp</Transaction>
+    <Transaction>2021/11/23 11:29:52.000.765,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\errormsgs.cpp</Transaction>
+    <Transaction>2021/11/23 11:29:52.000.760,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\customers.cpp</Transaction>
+    <Transaction>2021/11/23 11:29:52.000.754,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\assets.cpp</Transaction>
+    <Transaction>2021/11/23 11:29:52.000.767,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\maths.cpp</Transaction>
+    <Transaction>2021/11/23 11:29:52.000.770,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\statistics.cpp</Transaction>
+    <Transaction>2021/11/23 11:29:52.000.773,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\utils.cpp</Transaction>
+    <Transaction>2021/11/23 15:43:17.000.982,F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\immobiliare.cpp=</Transaction>
+    <Transaction>2021/11/23 18:10:23.000.753,F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\TFormMain.cpp=</Transaction>
+    <Transaction>2021/11/23 18:11:46.000.531,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\TFormMain.cpp</Transaction>
+    <Transaction>2021/11/23 18:42:38.000.501,F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\TFormMain.cpp=</Transaction>
+    <Transaction>2021/11/24 20:07:01.000.172,=C:\Program Files (x86)\Embarcadero\RAD Studio\9.0\lib\win32\release\memmgr.lib</Transaction>
+    <Transaction>2021/11/25 11:08:52.000.483,C:\Program Files (x86)\Embarcadero\RAD Studio\9.0\lib\win32\release\memmgr.lib=</Transaction>
+  </Transactions>
+</BorlandProject>

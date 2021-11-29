@@ -1,0 +1,101 @@
+\hypertarget{libguidll_8h_source}{}\doxysection{libguidll.\+h}
+\label{libguidll_8h_source}\index{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/libguidll.h@{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/libguidll.h}}
+\mbox{\hyperlink{libguidll_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{2 \textcolor{comment}{    author: Francesco Settembrini}}
+\DoxyCodeLine{3 \textcolor{comment}{    last update: 8/11/2021, 28/11/2021}}
+\DoxyCodeLine{4 \textcolor{comment}{    e-\/mail: mailto:francesco.settembrini@poliba.it}}
+\DoxyCodeLine{5 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <windows.h>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keywordtype}{void} \mbox{\hyperlink{libguidll_8h_aa2e2be43e4cad8acbba3fca6a2293d1e}{libgui\_Init}}(HINSTANCE hInst);}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14                                             \textcolor{comment}{// function pointer prototypes}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{typedef} VOID (WINAPI \_\_stdcall *libgui\_ShowHello)();}
+\DoxyCodeLine{17 \textcolor{keyword}{typedef} VOID (WINAPI \_\_stdcall *libgui\_ShowMessage)(LPCSTR pMessage);}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{typedef} VOID (WINAPI \_\_stdcall *libgui\_Show)(LPVOID pForm);}
+\DoxyCodeLine{20 \textcolor{keyword}{typedef} VOID (WINAPI \_\_stdcall *libgui\_Hide)(LPVOID pForm);}
+\DoxyCodeLine{21 \textcolor{keyword}{typedef} VOID (WINAPI \_\_stdcall *libgui\_Move)(LPVOID pForm,}
+\DoxyCodeLine{22     \textcolor{keywordtype}{int} nLeft, \textcolor{keywordtype}{int} nTop, \textcolor{keywordtype}{int} nWidth, \textcolor{keywordtype}{int} nHeight);}
+\DoxyCodeLine{23 \textcolor{keyword}{typedef} VOID (WINAPI \_\_stdcall *libgui\_ShowModal)(LPVOID pForm);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_CreateFormDebug)();}
+\DoxyCodeLine{26 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_DebugPrint)(LPVOID pDebugForm, LPCSTR pString);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_CreateFormAssets)(LPVOID pDB, HWND hWndMsgs);}
+\DoxyCodeLine{29 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_CreateFormCustomers)(LPVOID pDB, HWND hWndMsgs);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_CreateFormFindAssets)(LPVOID pDB, HWND hWndMsgs);}
+\DoxyCodeLine{32 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_CreateFormFindCustomers)(LPVOID pDB, HWND hWndMsgs);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_CreateFormQueries)(LPVOID pDB, HWND hWndMsgs);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_DestroyFormDebug)(LPVOID pForm);}
+\DoxyCodeLine{37 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_DestroyFormAssets)(LPVOID pForm);}
+\DoxyCodeLine{38 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_DestroyFormCustomers)(LPVOID pForm);}
+\DoxyCodeLine{39 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_DestroyFormFindAssets)(LPVOID pForm);}
+\DoxyCodeLine{40 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_DestroyFormFindCustomers)(LPVOID pForm);}
+\DoxyCodeLine{41 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_DestroyFormQueries)(LPVOID pForm);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_DBCreate)();}
+\DoxyCodeLine{45 \textcolor{keyword}{typedef} VOID (WINAPI \_\_stdcall *libgui\_DBAssetsCreateArchive)(LPVOID pDB);}
+\DoxyCodeLine{46 \textcolor{keyword}{typedef} VOID (WINAPI \_\_stdcall *libgui\_DBCustomersCreateArchive)(LPVOID pDB);}
+\DoxyCodeLine{47 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_DBCitiesLoadFromFile)(LPVOID pDB, LPCSTR pFileName);}
+\DoxyCodeLine{48 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_DBAssetsLoadFromFile)(LPVOID pDB, LPCSTR pFileName);}
+\DoxyCodeLine{49 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_DBCustomersLoadFromFile)(LPVOID pDB, LPCSTR pFileName);}
+\DoxyCodeLine{50 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_DBAssetsSaveToFile)(LPVOID pDB, LPCSTR pFileName);}
+\DoxyCodeLine{51 \textcolor{keyword}{typedef} LPVOID (WINAPI \_\_stdcall *libgui\_DBCustomersSaveToFile)(LPVOID pDB, LPCSTR pFileName);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{keyword}{typedef} BOOL (WINAPI \_\_stdcall *libgui\_DBHaveAssets)(LPVOID pDB);}
+\DoxyCodeLine{54 \textcolor{keyword}{typedef} BOOL (WINAPI \_\_stdcall *libgui\_DBHaveCustomers)(LPVOID pDB);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56                                             \textcolor{comment}{// function pointers}}
+\DoxyCodeLine{57 \textcolor{keyword}{extern} libgui\_ShowHello fpShowHello;}
+\DoxyCodeLine{58 \textcolor{keyword}{extern} libgui\_ShowMessage fpShowMessage;}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 \textcolor{keyword}{extern} libgui\_Show fpFormShow;}
+\DoxyCodeLine{61 \textcolor{keyword}{extern} libgui\_Hide fpFormHide;}
+\DoxyCodeLine{62 \textcolor{keyword}{extern} libgui\_Move fpFormMove;}
+\DoxyCodeLine{63 \textcolor{keyword}{extern} libgui\_ShowModal fpFormShowModal;}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65 \textcolor{keyword}{extern} libgui\_CreateFormDebug fpCreateFormDebug;}
+\DoxyCodeLine{66 \textcolor{keyword}{extern} libgui\_DebugPrint fpDebugPrint;}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{keyword}{extern} libgui\_CreateFormAssets fpCreateFormAssets;}
+\DoxyCodeLine{69 \textcolor{keyword}{extern} libgui\_CreateFormCustomers fpCreateFormCustomers;}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{keyword}{extern} libgui\_CreateFormFindAssets fpCreateFormFindAssets;}
+\DoxyCodeLine{72 \textcolor{keyword}{extern} libgui\_CreateFormFindCustomers fpCreateFormFindCustomers;}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 \textcolor{keyword}{extern} libgui\_CreateFormQueries fpCreateFormQueries;}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 \textcolor{keyword}{extern} libgui\_DestroyFormDebug fpDestroyFormDebug;}
+\DoxyCodeLine{77 \textcolor{keyword}{extern} libgui\_DestroyFormAssets fpDestroyFormAssets;}
+\DoxyCodeLine{78 \textcolor{keyword}{extern} libgui\_DestroyFormCustomers fpDestroyFormCustomers;}
+\DoxyCodeLine{79 \textcolor{keyword}{extern} libgui\_DestroyFormFindAssets fpDestroyFormFindAssets;}
+\DoxyCodeLine{80 \textcolor{keyword}{extern} libgui\_DestroyFormFindCustomers fpDestroyFormFindCustomers;}
+\DoxyCodeLine{81 \textcolor{keyword}{extern} libgui\_DestroyFormQueries fpDestroyFormQueries;}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84 \textcolor{keyword}{extern} libgui\_DBCreate fpDBCreate;}
+\DoxyCodeLine{85 \textcolor{keyword}{extern} libgui\_DBAssetsCreateArchive fpDBAssetsCreateArchive;}
+\DoxyCodeLine{86 \textcolor{keyword}{extern} libgui\_DBCustomersCreateArchive fpDBCustomersCreateArchive;}
+\DoxyCodeLine{87 \textcolor{keyword}{extern} libgui\_DBCitiesLoadFromFile fpDBCitiesLoadFromFile;}
+\DoxyCodeLine{88 \textcolor{keyword}{extern} libgui\_DBAssetsLoadFromFile fpDBAssetsLoadFromFile;}
+\DoxyCodeLine{89 \textcolor{keyword}{extern} libgui\_DBCustomersLoadFromFile fpDBCustomersLoadFromFile;}
+\DoxyCodeLine{90 \textcolor{keyword}{extern} libgui\_DBAssetsSaveToFile fpDBAssetsSaveToFile;}
+\DoxyCodeLine{91 \textcolor{keyword}{extern} libgui\_DBCustomersSaveToFile fpDBCustomersSaveToFile;}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 \textcolor{keyword}{extern} libgui\_DBHaveAssets fpDBHaveAssets;}
+\DoxyCodeLine{94 \textcolor{keyword}{extern} libgui\_DBHaveCustomers fpDBHaveCustomers;}
+\DoxyCodeLine{95 }
+
+\end{DoxyCode}

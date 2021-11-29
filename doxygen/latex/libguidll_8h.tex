@@ -1,0 +1,154 @@
+\hypertarget{libguidll_8h}{}\doxysection{Z\+:/\+F/dev/jobs/immobiliare.mingw/immobiliare/sources/libguidll.h File Reference}
+\label{libguidll_8h}\index{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/libguidll.h@{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/libguidll.h}}
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{libguidll_8h_ab0f474062ae27732b1519b12216835ec}\label{libguidll_8h_ab0f474062ae27732b1519b12216835ec}} 
+typedef int {\bfseries n\+Left}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a6d920c93fec86db099866f7062125cc8}\label{libguidll_8h_a6d920c93fec86db099866f7062125cc8}} 
+typedef int int {\bfseries n\+Top}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a4a0bf953697addb6f87c9f847b1758ae}\label{libguidll_8h_a4a0bf953697addb6f87c9f847b1758ae}} 
+typedef int int int {\bfseries n\+Width}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a5d954ff01f165315a52d616a8172e2da}\label{libguidll_8h_a5d954ff01f165315a52d616a8172e2da}} 
+typedef int int int int {\bfseries n\+Height}
+\item 
+\mbox{\Hypertarget{libguidll_8h_af05c5420c6eeece3552b24c19d5c2c42}\label{libguidll_8h_af05c5420c6eeece3552b24c19d5c2c42}} 
+typedef LPCSTR {\bfseries p\+String}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a85e07f25595500a57ddb9cbe3ee4c5f5}\label{libguidll_8h_a85e07f25595500a57ddb9cbe3ee4c5f5}} 
+typedef HWND {\bfseries h\+Wnd\+Msgs}
+\item 
+\mbox{\Hypertarget{libguidll_8h_ac8887f0428f801820b8018d62f4d1062}\label{libguidll_8h_ac8887f0428f801820b8018d62f4d1062}} 
+typedef LPCSTR {\bfseries p\+File\+Name}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{libguidll_8h_aa2e2be43e4cad8acbba3fca6a2293d1e}{libgui\+\_\+\+Init}} (HINSTANCE h\+Inst)
+\begin{DoxyCompactList}\small\item\em Initialize the hooks functions for \char`\"{}\+Lib\+Gui\char`\"{} DLL Library. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{libguidll_8h_a034ea42385e704026e06413eb6eef550}\label{libguidll_8h_a034ea42385e704026e06413eb6eef550}} 
+typedef {\bfseries VOID} (WINAPI \+\_\+\+\_\+stdcall $\ast$libgui\+\_\+\+Show\+Hello)()
+\item 
+\mbox{\Hypertarget{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}\label{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}} 
+typedef {\bfseries LPVOID} (WINAPI \+\_\+\+\_\+stdcall $\ast$libgui\+\_\+\+Create\+Form\+Debug)()
+\item 
+\mbox{\Hypertarget{libguidll_8h_a88028fb73923716881a49ed2de40ef3e}\label{libguidll_8h_a88028fb73923716881a49ed2de40ef3e}} 
+typedef {\bfseries BOOL} (WINAPI \+\_\+\+\_\+stdcall $\ast$libgui\+\_\+\+DBHave\+Assets)(LPVOID p\+DB)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{libguidll_8h_aadce8ee0b1f140c52e75948f7457351f}\label{libguidll_8h_aadce8ee0b1f140c52e75948f7457351f}} 
+libgui\+\_\+\+Show\+Hello {\bfseries fp\+Show\+Hello}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a137927b297e2785d7d047116edcbb70c}\label{libguidll_8h_a137927b297e2785d7d047116edcbb70c}} 
+libgui\+\_\+\+Show\+Message {\bfseries fp\+Show\+Message}
+\item 
+\mbox{\Hypertarget{libguidll_8h_ab0dab2951cffda358a6d7e57dde8ce42}\label{libguidll_8h_ab0dab2951cffda358a6d7e57dde8ce42}} 
+libgui\+\_\+\+Show {\bfseries fp\+Form\+Show}
+\item 
+\mbox{\Hypertarget{libguidll_8h_ae120dd57d7985b7b34ba290ee8ad3b7f}\label{libguidll_8h_ae120dd57d7985b7b34ba290ee8ad3b7f}} 
+libgui\+\_\+\+Hide {\bfseries fp\+Form\+Hide}
+\item 
+\mbox{\Hypertarget{libguidll_8h_ab317df176c2c1ab31f29a5a61dbc0c24}\label{libguidll_8h_ab317df176c2c1ab31f29a5a61dbc0c24}} 
+libgui\+\_\+\+Move {\bfseries fp\+Form\+Move}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a8ce2ef06840c20f54bc67201c0e53e2e}\label{libguidll_8h_a8ce2ef06840c20f54bc67201c0e53e2e}} 
+libgui\+\_\+\+Show\+Modal {\bfseries fp\+Form\+Show\+Modal}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a5a5ae9940ed0afa89ba3f9d851c11cd3}\label{libguidll_8h_a5a5ae9940ed0afa89ba3f9d851c11cd3}} 
+libgui\+\_\+\+Create\+Form\+Debug {\bfseries fp\+Create\+Form\+Debug}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a4a9f3f46134d299bb628cecaf497994c}\label{libguidll_8h_a4a9f3f46134d299bb628cecaf497994c}} 
+libgui\+\_\+\+Debug\+Print {\bfseries fp\+Debug\+Print}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a70a62467a343b0c23196d1c1ad2c2b1e}\label{libguidll_8h_a70a62467a343b0c23196d1c1ad2c2b1e}} 
+libgui\+\_\+\+Create\+Form\+Assets {\bfseries fp\+Create\+Form\+Assets}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a76c1b38e31fa7aa76ca61a695ddd1a90}\label{libguidll_8h_a76c1b38e31fa7aa76ca61a695ddd1a90}} 
+libgui\+\_\+\+Create\+Form\+Customers {\bfseries fp\+Create\+Form\+Customers}
+\item 
+\mbox{\Hypertarget{libguidll_8h_ab7eebb64b65be4d0913a25576bff3b03}\label{libguidll_8h_ab7eebb64b65be4d0913a25576bff3b03}} 
+libgui\+\_\+\+Create\+Form\+Find\+Assets {\bfseries fp\+Create\+Form\+Find\+Assets}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a803f73bb44a763486053f8893e9ef838}\label{libguidll_8h_a803f73bb44a763486053f8893e9ef838}} 
+libgui\+\_\+\+Create\+Form\+Find\+Customers {\bfseries fp\+Create\+Form\+Find\+Customers}
+\item 
+\mbox{\Hypertarget{libguidll_8h_ae845680c60bf31809ef9ae7a3266138a}\label{libguidll_8h_ae845680c60bf31809ef9ae7a3266138a}} 
+libgui\+\_\+\+Create\+Form\+Queries {\bfseries fp\+Create\+Form\+Queries}
+\item 
+\mbox{\Hypertarget{libguidll_8h_aa5d7f6cf2d5dc2f6c5b0ae38052d1946}\label{libguidll_8h_aa5d7f6cf2d5dc2f6c5b0ae38052d1946}} 
+libgui\+\_\+\+Destroy\+Form\+Debug {\bfseries fp\+Destroy\+Form\+Debug}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a260e56b90a2e892abb2ab1c049b76f59}\label{libguidll_8h_a260e56b90a2e892abb2ab1c049b76f59}} 
+libgui\+\_\+\+Destroy\+Form\+Assets {\bfseries fp\+Destroy\+Form\+Assets}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a5937137a60a6dffe2a6d24394e5c0afa}\label{libguidll_8h_a5937137a60a6dffe2a6d24394e5c0afa}} 
+libgui\+\_\+\+Destroy\+Form\+Customers {\bfseries fp\+Destroy\+Form\+Customers}
+\item 
+\mbox{\Hypertarget{libguidll_8h_ab45d644f8886a63ff2993fbc93374f8e}\label{libguidll_8h_ab45d644f8886a63ff2993fbc93374f8e}} 
+libgui\+\_\+\+Destroy\+Form\+Find\+Assets {\bfseries fp\+Destroy\+Form\+Find\+Assets}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a59062902ab52e957eeaa1593324e1887}\label{libguidll_8h_a59062902ab52e957eeaa1593324e1887}} 
+libgui\+\_\+\+Destroy\+Form\+Find\+Customers {\bfseries fp\+Destroy\+Form\+Find\+Customers}
+\item 
+\mbox{\Hypertarget{libguidll_8h_aa856d8c2f4dcfaf82161b1a55946915f}\label{libguidll_8h_aa856d8c2f4dcfaf82161b1a55946915f}} 
+libgui\+\_\+\+Destroy\+Form\+Queries {\bfseries fp\+Destroy\+Form\+Queries}
+\item 
+\mbox{\Hypertarget{libguidll_8h_af51be149e2c08d82b9371c055508f55f}\label{libguidll_8h_af51be149e2c08d82b9371c055508f55f}} 
+libgui\+\_\+\+DBCreate {\bfseries fp\+DBCreate}
+\item 
+\mbox{\Hypertarget{libguidll_8h_abfb94e182f6885da501cd96a50386c89}\label{libguidll_8h_abfb94e182f6885da501cd96a50386c89}} 
+libgui\+\_\+\+DBAssets\+Create\+Archive {\bfseries fp\+DBAssets\+Create\+Archive}
+\item 
+\mbox{\Hypertarget{libguidll_8h_ac854b8a037c2c7ce188dd0f670cee821}\label{libguidll_8h_ac854b8a037c2c7ce188dd0f670cee821}} 
+libgui\+\_\+\+DBCustomers\+Create\+Archive {\bfseries fp\+DBCustomers\+Create\+Archive}
+\item 
+\mbox{\Hypertarget{libguidll_8h_ae7b75947c59bb64a38ca506efd3e64a6}\label{libguidll_8h_ae7b75947c59bb64a38ca506efd3e64a6}} 
+libgui\+\_\+\+DBCities\+Load\+From\+File {\bfseries fp\+DBCities\+Load\+From\+File}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a9051f6303ef0b57d729456d35d49da6f}\label{libguidll_8h_a9051f6303ef0b57d729456d35d49da6f}} 
+libgui\+\_\+\+DBAssets\+Load\+From\+File {\bfseries fp\+DBAssets\+Load\+From\+File}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a2da47f75808e69fbc5908321872147b9}\label{libguidll_8h_a2da47f75808e69fbc5908321872147b9}} 
+libgui\+\_\+\+DBCustomers\+Load\+From\+File {\bfseries fp\+DBCustomers\+Load\+From\+File}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a208f53ff679ea40c7e2ec10691e21350}\label{libguidll_8h_a208f53ff679ea40c7e2ec10691e21350}} 
+libgui\+\_\+\+DBAssets\+Save\+To\+File {\bfseries fp\+DBAssets\+Save\+To\+File}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a665e2b0c8c98a7b1f9b0652a3e4e4f21}\label{libguidll_8h_a665e2b0c8c98a7b1f9b0652a3e4e4f21}} 
+libgui\+\_\+\+DBCustomers\+Save\+To\+File {\bfseries fp\+DBCustomers\+Save\+To\+File}
+\item 
+\mbox{\Hypertarget{libguidll_8h_a616a7c8cfa16036ad6c0ccf711c7e501}\label{libguidll_8h_a616a7c8cfa16036ad6c0ccf711c7e501}} 
+libgui\+\_\+\+DBHave\+Assets {\bfseries fp\+DBHave\+Assets}
+\item 
+\mbox{\Hypertarget{libguidll_8h_ab9dc6d8cd637a8aa19ce439e29953608}\label{libguidll_8h_ab9dc6d8cd637a8aa19ce439e29953608}} 
+libgui\+\_\+\+DBHave\+Customers {\bfseries fp\+DBHave\+Customers}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{libguidll_8h_aa2e2be43e4cad8acbba3fca6a2293d1e}\label{libguidll_8h_aa2e2be43e4cad8acbba3fca6a2293d1e}} 
+\index{libguidll.h@{libguidll.h}!libgui\_Init@{libgui\_Init}}
+\index{libgui\_Init@{libgui\_Init}!libguidll.h@{libguidll.h}}
+\doxysubsubsection{\texorpdfstring{libgui\_Init()}{libgui\_Init()}}
+{\footnotesize\ttfamily void libgui\+\_\+\+Init (\begin{DoxyParamCaption}\item[{HINSTANCE}]{h\+Inst }\end{DoxyParamCaption})}
+
+
+
+Initialize the hooks functions for \char`\"{}\+Lib\+Gui\char`\"{} DLL Library. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em h\+Inst} & The instance of the library \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,71 @@
+\hypertarget{dialogs_8cpp}{}\doxysection{Z\+:/\+F/dev/jobs/immobiliare.mingw/immobiliare/sources/dialogs.cpp File Reference}
+\label{dialogs_8cpp}\index{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/dialogs.cpp@{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/dialogs.cpp}}
+
+
+Commong dialogs facilities functions.  
+
+
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}../sources/dialogs.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{dialogs_8cpp_a8e1e31f55c777c2b20952aef7782d98a}{dialogs\+::\+Open\+File\+Dialog}} (LPCSTR str\+Filter, LPCSTR str\+Def\+Ext, HWND h\+Wnd\+Owner)
+\begin{DoxyCompactList}\small\item\em Shows a File Open dialog. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{dialogs_8cpp_ac774915f24b844158b83e663fd36c9f9}{dialogs\+::\+Save\+File\+Dialog}} (LPCSTR str\+Filter, LPCSTR str\+Def\+Ext, HWND h\+Wnd\+Owner)
+\begin{DoxyCompactList}\small\item\em Shows a File Save dialog. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Commong dialogs facilities functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{dialogs_8cpp_a8e1e31f55c777c2b20952aef7782d98a}\label{dialogs_8cpp_a8e1e31f55c777c2b20952aef7782d98a}} 
+\index{dialogs.cpp@{dialogs.cpp}!OpenFileDialog@{OpenFileDialog}}
+\index{OpenFileDialog@{OpenFileDialog}!dialogs.cpp@{dialogs.cpp}}
+\doxysubsubsection{\texorpdfstring{OpenFileDialog()}{OpenFileDialog()}}
+{\footnotesize\ttfamily std\+::string dialogs\+::\+Open\+File\+Dialog (\begin{DoxyParamCaption}\item[{LPCSTR}]{str\+Filter,  }\item[{LPCSTR}]{str\+Def\+Ext,  }\item[{HWND}]{h\+Wnd\+Owner }\end{DoxyParamCaption})}
+
+
+
+Shows a File Open dialog. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+Filter} & The filter for files to shows for \\
+\hline
+{\em str\+Def\+Ext} & The default extension filter for files \\
+\hline
+{\em h\+Wnd\+Owner} & The handle of the window for the z-\/order overlap \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the selected filename 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dialogs_8cpp_ac774915f24b844158b83e663fd36c9f9}\label{dialogs_8cpp_ac774915f24b844158b83e663fd36c9f9}} 
+\index{dialogs.cpp@{dialogs.cpp}!SaveFileDialog@{SaveFileDialog}}
+\index{SaveFileDialog@{SaveFileDialog}!dialogs.cpp@{dialogs.cpp}}
+\doxysubsubsection{\texorpdfstring{SaveFileDialog()}{SaveFileDialog()}}
+{\footnotesize\ttfamily std\+::string dialogs\+::\+Save\+File\+Dialog (\begin{DoxyParamCaption}\item[{LPCSTR}]{str\+Filter,  }\item[{LPCSTR}]{str\+Def\+Ext,  }\item[{HWND}]{h\+Wnd\+Owner }\end{DoxyParamCaption})}
+
+
+
+Shows a File Save dialog. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+Filter} & The filter for files to shows for \\
+\hline
+{\em str\+Def\+Ext} & The default extension filter for files \\
+\hline
+{\em h\+Wnd\+Owner} & The handle of the window for the z-\/order overlap \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the selected filename 
+\end{DoxyReturn}

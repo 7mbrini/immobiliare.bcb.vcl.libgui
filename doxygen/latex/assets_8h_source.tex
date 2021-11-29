@@ -1,0 +1,127 @@
+\hypertarget{assets_8h_source}{}\doxysection{assets.\+h}
+\label{assets_8h_source}\index{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/assets.h@{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/assets.h}}
+\mbox{\hyperlink{assets_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{2 \textcolor{comment}{    author: Francesco Settembrini}}
+\DoxyCodeLine{3 \textcolor{comment}{    last update: 8/11/2021, 28/11/2021}}
+\DoxyCodeLine{4 \textcolor{comment}{    e-\/mail: mailto:francesco.settembrini@poliba.it}}
+\DoxyCodeLine{5 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef assetsH}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define assetsH}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define ASSET\_MINPRICE      10}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define ASSET\_NAMESMINLEN   1}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define ASSET\_NAMESMAXLEN   50}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define ASSET\_MAGICLEN      64}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define ASSET\_DESCRMAXLEN   (2<<10) }\textcolor{comment}{// max 2 KB for descriptions}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define ASSET\_IMAGEMAXSIZE  (2<<14) }\textcolor{comment}{// max \string~32 KB for jpeg images}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{enum} enAssetStatus \{ asNone = 0, asForRent, asRented, asForSale, asSoldOut \};}
+\DoxyCodeLine{24 \textcolor{keyword}{enum} enAssetTypology \{ atNone = 0, atTerrain, atGarage, atVilla,}
+\DoxyCodeLine{25     atApartment, atOffice, atCommercial, atIndustrial \};}
+\DoxyCodeLine{26 \textcolor{keyword}{enum} enAssetEpgl \{ aeNone = 0, aeG, aeF, aeE, aeD, aeC, aeB, aeA4, aeA3, aeA2, aeA1 \};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_t_asset}{TAsset}};}
+\DoxyCodeLine{29 \textcolor{keyword}{typedef} std::vector<TAsset> TVecAssets;}
+\DoxyCodeLine{30 \textcolor{keyword}{typedef} std::vector<TAsset*> TVecPtrAssets;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_t_asset}{TAsset}}}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35 \textcolor{keyword}{public}:}
+\DoxyCodeLine{36     \mbox{\hyperlink{struct_t_asset_a9c05b7bec925de7089694336a6feac3b}{TAsset}}();}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{keyword}{public}:}
+\DoxyCodeLine{39     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_t_asset_afae0bde22f8a49109b0436a90f680106}{Read}}(FILE* fp);}
+\DoxyCodeLine{40     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_t_asset_ad69b21538b663f61411bc3426ea4f46d}{Write}}(FILE* fp);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     std::string \mbox{\hyperlink{struct_t_asset_a3546c47baa74710242fb72dbe9ca6867}{AsString}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keyword}{public}:}
+\DoxyCodeLine{45     \textcolor{keywordtype}{char} m\_strAddress[ASSET\_NAMESMAXLEN];}
+\DoxyCodeLine{46     \textcolor{keywordtype}{char} m\_strCity[ASSET\_NAMESMAXLEN];}
+\DoxyCodeLine{47     \textcolor{keywordtype}{char} m\_strDescription[ASSET\_DESCRMAXLEN];}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     enAssetEpgl m\_nEpgl;}
+\DoxyCodeLine{50     enAssetTypology m\_nTypology;}
+\DoxyCodeLine{51     enAssetStatus m\_nStatus;}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{keywordtype}{double} m\_BuildDate, m\_SoldDate;}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{unsigned} m\_nValue; \textcolor{comment}{// cadastral value}}
+\DoxyCodeLine{56     \textcolor{keywordtype}{unsigned} m\_nPrice; \textcolor{comment}{// rent or selling price}}
+\DoxyCodeLine{57     \textcolor{keywordtype}{unsigned} m\_nCap, m\_nArea;}
+\DoxyCodeLine{58     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} m\_nRooms, m\_nBathrooms;}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{bool} m\_bImage;}
+\DoxyCodeLine{61     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} m\_pImage[ASSET\_IMAGEMAXSIZE];}
+\DoxyCodeLine{62 \};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_t_assets_archive}{TAssetsArchive}}}
+\DoxyCodeLine{65 \{}
+\DoxyCodeLine{66 \textcolor{keyword}{public}:}
+\DoxyCodeLine{67     \mbox{\hyperlink{struct_t_assets_archive_af851427f1c98cef09a17fe83eb53d95c}{TAssetsArchive}}();}
+\DoxyCodeLine{68     \mbox{\hyperlink{struct_t_assets_archive_a37f8a45b4e5b63076370654e4819768b}{\string~TAssetsArchive}}();}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_t_assets_archive_a55eda0b5e3229f0005f8ba4e2f8e1eab}{Clear}}();}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_t_assets_archive_af232b79abcb267f7608a4b7cded8445d}{Add}}(\mbox{\hyperlink{struct_t_asset}{TAsset}}* pAsset);}
+\DoxyCodeLine{73     \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_t_assets_archive_a3a1e485a9fd9b8734b7446ad4a088d98}{Delete}}(\textcolor{keywordtype}{unsigned} nIndex);}
+\DoxyCodeLine{74     \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_t_assets_archive_a482ee46ac3740222e68036f7816b15e1}{Update}}(\textcolor{keywordtype}{unsigned} nIndex, \mbox{\hyperlink{struct_t_asset}{TAsset}} \textcolor{keyword}{const}\& Asset);}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_t_assets_archive_a0ce4cef03d318231c143bab7e6f1a19f}{LoadFromFile}}(std::string strFileName);}
+\DoxyCodeLine{77     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_t_assets_archive_adb96b7977ec147a81825be9059411e87}{SaveToFile}}(std::string strFileName);}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     \textcolor{keywordtype}{unsigned} \mbox{\hyperlink{struct_t_assets_archive_a255787e2eb6797318817d6e9a6f3f5ee}{GetCount}}();}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     \mbox{\hyperlink{struct_t_asset}{TAsset}}* \textcolor{keyword}{const} \mbox{\hyperlink{struct_t_assets_archive_a53d29b0af4e4c08aaac8c6f554947797}{GetRecord}}(\textcolor{keywordtype}{unsigned} nId);}
+\DoxyCodeLine{82     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_t_assets_archive_a463ffd19495bda69e9a2c70c03b4da5d}{GetRecordId}}(\mbox{\hyperlink{struct_t_asset}{TAsset}}* pAsset, \textcolor{keywordtype}{unsigned}\& nId);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84     TVecPtrAssets \mbox{\hyperlink{struct_t_assets_archive_a61c34939d9cd9fe19ec188993dbbced1}{GetAssets}}();}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{87     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_t_assets_archive_1_1_t_file_header}{TFileHeader}}}
+\DoxyCodeLine{88     \{}
+\DoxyCodeLine{89         \textcolor{keywordtype}{char} pMagic[ASSET\_MAGICLEN];}
+\DoxyCodeLine{90         \textcolor{keywordtype}{int} nRecords;}
+\DoxyCodeLine{91     \};}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{94     TVecPtrAssets m\_PtrAssets;}
+\DoxyCodeLine{95 \};}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 std::string \mbox{\hyperlink{assets_8h_a2538e5b32a75a307a5468cf6d4bd31a9}{AsString}}(enAssetEpgl nEpgl);}
+\DoxyCodeLine{99 std::string \mbox{\hyperlink{assets_8h_a2538e5b32a75a307a5468cf6d4bd31a9}{AsString}}(enAssetStatus nStatus);}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a7397a33aaf8571d427cc9565d9933643}{FilterByStatus}}(TVecPtrAssets\& Assets, enAssetStatus nStatus);}
+\DoxyCodeLine{102 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_aebf27843bfa26934eed57802340e4a0d}{FilterByTypology}}(TVecPtrAssets\& Assets, enAssetTypology nTypology);}
+\DoxyCodeLine{103 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a123d8cf12168a139f13aaebb0a752a4e}{FilterByCity}}(TVecPtrAssets\& Assets, std::string strCityName, \textcolor{keywordtype}{bool} bFullMatch=\textcolor{keyword}{true});}
+\DoxyCodeLine{104 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a11680f8120a98742437c180ff2935241}{FilterByAddress}}(TVecPtrAssets\& Assets, std::string strAddress, \textcolor{keywordtype}{bool} bFullMatch=\textcolor{keyword}{false});}
+\DoxyCodeLine{105 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_ac9801ddc2c54486fffb6adff8cd64367}{FilterByEpgl}}(TVecPtrAssets\& Assets, enAssetEpgl nEpgl, std::string strIneq);}
+\DoxyCodeLine{106 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a4eff8670af9fcb429140a8907b9e9c28}{FilterByBuildDate}}(TVecPtrAssets\& Assets, \textcolor{keywordtype}{double} Date, std::string strIneq);}
+\DoxyCodeLine{107 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_ad5c3fb65e16705a28685957058176c95}{FilterByPrice}}(TVecPtrAssets\& Assets, \textcolor{keywordtype}{unsigned} nPrice, std::string strIneq);}
+\DoxyCodeLine{108 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a4196dab5119fd21ed0df52b7175de31e}{FilterByRooms}}(TVecPtrAssets\& Assets, \textcolor{keywordtype}{unsigned} nRooms, std::string strIneq);}
+\DoxyCodeLine{109 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a5650b040d1e2df9af0657e44709bf72f}{FilterByBathrooms}}(TVecPtrAssets\& Assets, \textcolor{keywordtype}{unsigned} nRooms, std::string strIneq);}
+\DoxyCodeLine{110 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a8fb485856808b9ea02286916649e1925}{FilterByArea}}(TVecPtrAssets\& Assets, \textcolor{keywordtype}{unsigned} nArea, std::string strIneq);}
+\DoxyCodeLine{111 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_acbf7a8abbc4637ee8fda1dd462764e49}{FilterByValue}}(TVecPtrAssets\& Assets, \textcolor{keywordtype}{unsigned} nValue, std::string strIneq);}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a0316262d048f2502abbd3cdc0b8a26dd}{SortByCity}}(TVecPtrAssets\& Assets, \textcolor{keywordtype}{bool} bAsc = \textcolor{keyword}{true});}
+\DoxyCodeLine{114 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a6e7f794f3ddf3414b3444f4aaa1eb195}{SortByPrice}}(TVecPtrAssets\& Assets, \textcolor{keywordtype}{bool} bAsc = \textcolor{keyword}{true});}
+\DoxyCodeLine{115 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_ac83b8c5e65061793f76491a2beafad89}{SortByArea}}(TVecPtrAssets\& Assets, \textcolor{keywordtype}{bool} bAsc = \textcolor{keyword}{true});}
+\DoxyCodeLine{116 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_adca105b145e57c2a1e138051cf86fc4c}{SortByValue}}(TVecPtrAssets\& Assets, \textcolor{keywordtype}{bool} bAsc = \textcolor{keyword}{true});}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{119 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121 }
+
+\end{DoxyCode}

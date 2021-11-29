@@ -1,0 +1,84 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{313A1CC3-CE96-413A-83AE-430A1C67918E}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="immobiliare.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\immobiliare.libgui\immobiliare.libgui.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\dbgen\dbgen.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\testunit\testunit.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\libgui\libgui.cbproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="immobiliare">
+			<MSBuild Projects="immobiliare.cbproj"/>
+		</Target>
+		<Target Name="immobiliare:Clean">
+			<MSBuild Projects="immobiliare.cbproj" Targets="Clean"/>
+		</Target>
+		<Target Name="immobiliare:Make">
+			<MSBuild Projects="immobiliare.cbproj" Targets="Make"/>
+		</Target>
+		<Target Name="immobiliare_libgui">
+			<MSBuild Projects="..\immobiliare.libgui\immobiliare.libgui.cbproj"/>
+		</Target>
+		<Target Name="immobiliare_libgui:Clean">
+			<MSBuild Projects="..\immobiliare.libgui\immobiliare.libgui.cbproj" Targets="Clean"/>
+		</Target>
+		<Target Name="immobiliare_libgui:Make">
+			<MSBuild Projects="..\immobiliare.libgui\immobiliare.libgui.cbproj" Targets="Make"/>
+		</Target>
+		<Target Name="dbgen">
+			<MSBuild Projects="..\dbgen\dbgen.cbproj"/>
+		</Target>
+		<Target Name="dbgen:Clean">
+			<MSBuild Projects="..\dbgen\dbgen.cbproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dbgen:Make">
+			<MSBuild Projects="..\dbgen\dbgen.cbproj" Targets="Make"/>
+		</Target>
+		<Target Name="testunit">
+			<MSBuild Projects="..\testunit\testunit.cbproj"/>
+		</Target>
+		<Target Name="testunit:Clean">
+			<MSBuild Projects="..\testunit\testunit.cbproj" Targets="Clean"/>
+		</Target>
+		<Target Name="testunit:Make">
+			<MSBuild Projects="..\testunit\testunit.cbproj" Targets="Make"/>
+		</Target>
+		<Target Name="libgui">
+			<MSBuild Projects="..\libgui\libgui.cbproj"/>
+		</Target>
+		<Target Name="libgui:Clean">
+			<MSBuild Projects="..\libgui\libgui.cbproj" Targets="Clean"/>
+		</Target>
+		<Target Name="libgui:Make">
+			<MSBuild Projects="..\libgui\libgui.cbproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="immobiliare;immobiliare_libgui;dbgen;testunit;libgui"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="immobiliare:Clean;immobiliare_libgui:Clean;dbgen:Clean;testunit:Clean;libgui:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="immobiliare:Make;immobiliare_libgui:Make;dbgen:Make;testunit:Make;libgui:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

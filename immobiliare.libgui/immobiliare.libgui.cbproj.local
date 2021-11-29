@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/23 11:14:44.000.221,=C:\Users\settembrini\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/11/23 11:15:28.000.827,C:\Users\settembrini\Documents\RAD Studio\Projects\Unit1.h=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare.c\TFormMain.h</Transaction>
+    <Transaction>2021/11/23 11:15:28.000.827,C:\Users\settembrini\Documents\RAD Studio\Projects\Unit1.cpp=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare.c\TFormMain.cpp</Transaction>
+    <Transaction>2021/11/23 11:15:28.000.827,C:\Users\settembrini\Documents\RAD Studio\Projects\Unit1.dfm=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare.c\TFormMain.dfm</Transaction>
+    <Transaction>2021/11/23 11:15:38.000.749,C:\Users\settembrini\Documents\RAD Studio\Projects\Project1.cbproj=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare.c\immobiliare.c.cbproj</Transaction>
+    <Transaction>2021/11/23 11:17:51.000.303,=F:\dev\jobs\immobiliare.bcb.vcl.c\libgui\Win32\Debug\libgui.lib</Transaction>
+    <Transaction>2021/11/23 11:20:48.000.309,F:\dev\jobs\immobiliare.bcb.vcl.c\libgui\Win32\Debug\libgui.lib=</Transaction>
+    <Transaction>2021/11/23 11:22:47.000.935,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare.c\Win32\Debug\libgui.lib</Transaction>
+    <Transaction>2021/11/23 11:35:57.000.446,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\statistics.cpp</Transaction>
+    <Transaction>2021/11/23 11:35:57.000.432,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\assets.cpp</Transaction>
+    <Transaction>2021/11/23 11:35:57.000.435,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\cities.cpp</Transaction>
+    <Transaction>2021/11/23 11:35:57.000.442,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\errormsgs.cpp</Transaction>
+    <Transaction>2021/11/23 11:35:57.000.440,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\databanker.cpp</Transaction>
+    <Transaction>2021/11/23 11:35:57.000.437,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\customers.cpp</Transaction>
+    <Transaction>2021/11/23 11:35:57.000.443,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\maths.cpp</Transaction>
+    <Transaction>2021/11/23 11:38:32.000.875,=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare\utils.cpp</Transaction>
+    <Transaction>2021/11/23 22:10:10.000.396,F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare.c\Win32\Debug\libgui.lib=</Transaction>
+    <Transaction>2021/11/23 22:10:22.000.174,=F:\dev\jobs\immobiliare.bcb.vcl.c\libgui\Win32\Debug\libgui.lib</Transaction>
+    <Transaction>2021/11/26 14:08:01.000.985,F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare.dll\immobiliare.c.cbproj=F:\dev\jobs\immobiliare.bcb.vcl.c\immobiliare.dll\immobiliare.dll.cbproj</Transaction>
+    <Transaction>2021/11/26 14:13:57.000.897,F:\dev\jobs\immobiliare.bcb.vcl.libgui\immobiliare.libgui\immobiliare.dll.cbproj=F:\dev\jobs\immobiliare.bcb.vcl.libgui\immobiliare.libgui\immobiliare.libgui.cbproj</Transaction>
+    <Transaction>2021/11/26 14:15:05.000.025,F:\dev\jobs\immobiliare.bcb.vcl.libgui\libgui\Win32\Debug\libgui.lib=</Transaction>
+    <Transaction>2021/11/26 14:15:21.000.983,=F:\dev\jobs\immobiliare.bcb.vcl.libgui\libgui\Win32\Release\libgui.lib</Transaction>
+    <Transaction>2021/11/26 19:24:55.000.781,F:\dev\jobs\immobiliare.bcb.vcl.libgui\libgui\Win32\Release\libgui.lib=</Transaction>
+    <Transaction>2021/11/26 19:25:20.000.558,=F:\dev\jobs\immobiliare.bcb.vcl.libgui\libgui\Win32\Release\libgui.lib</Transaction>
+  </Transactions>
+</BorlandProject>

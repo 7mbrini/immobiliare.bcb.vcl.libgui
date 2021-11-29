@@ -1,0 +1,18 @@
+//---------------------------------------------------------------------------
+#ifndef utilsH
+#define utilsH
+
+//#include <vcl.h>
+#include <string>
+#include <algorithm>
+
+namespace utils
+{
+    std::string GetDataPath();
+
+	bool ParseDate(std::string strDate,
+    	unsigned short& nYear, unsigned short& nMonth, unsigned short& nDay);
+};
+
+//---------------------------------------------------------------------------
+#endif

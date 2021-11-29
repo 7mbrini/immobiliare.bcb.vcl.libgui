@@ -1,0 +1,23 @@
+//---------------------------------------------------------------------------
+#ifndef utilsH
+#define utilsH
+
+//#include <vcl.h>
+#include <string>
+#include <algorithm>
+
+namespace utils
+{
+	std::string GetExePath();
+    std::string GetDataPath();
+
+	bool FileExists(std::string strFileName);
+
+    std::string LowerCase(std::string strString);
+
+	bool ParseDate(std::string strDate,
+    	unsigned short& nYear, unsigned short& nMonth, unsigned short& nDay);
+};
+
+//---------------------------------------------------------------------------
+#endif
